@@ -1,43 +1,47 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Net.Mime;
 
 namespace OpenApiDiscoverability.Webapi.Controllers
 {
-    [Route("api/[controller]")]
+    /// <summary>
+    /// https://devblogs.microsoft.com/aspnet/creating-discoverable-http-apis-with-asp-net-core-5-web-api/?WT.mc_id=dotnet-13135-jogallow
+    /// </summary>
     [ApiController]
+    [ApiConventionType(typeof(DefaultApiConventions))]
+    [Route("api/shops")]
+    // this is the same as
+    // [Produces("application/json")]
+    // [Consumes("application/json")]
+    [Produces(MediaTypeNames.Application.Json)]
+    [Consumes(MediaTypeNames.Application.Json)]
     public class ShopController : ControllerBase
     {
-        // GET: api/<ShopController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        // operationId is defined as an optional unique string used to identify an operation
+        // Name = nameof(GetShops) defines this operationId (and needs to be unique)
+        [HttpGet(Name = nameof(GetShops))]
+        public IEnumerable<string> GetShops()
         {
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/<ShopController>/5
-        [HttpGet("{id}")]
+        [HttpGet("{id}", Name = nameof(Get))]
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST api/<ShopController>
-        [HttpPost]
+        [HttpPost(Name = nameof(Post))]
         public void Post([FromBody] string value)
         {
         }
 
-        // PUT api/<ShopController>/5
-        [HttpPut("{id}")]
+        [HttpPut("{id}", Name = nameof(Put))]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/<ShopController>/5
-        [HttpDelete("{id}")]
+        [HttpDelete("{id}", Name = nameof(Delete))]
         public void Delete(int id)
         {
         }

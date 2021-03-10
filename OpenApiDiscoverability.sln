@@ -3,7 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenApiDiscoverability.Webapi", "OpenApiDiscoverability.Webapi\OpenApiDiscoverability.Webapi.csproj", "{429C0FB7-84E0-4BDB-A7AC-47729ED63AAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenApiDiscoverability.Webapi", "OpenApiDiscoverability.Webapi\OpenApiDiscoverability.Webapi.csproj", "{429C0FB7-84E0-4BDB-A7AC-47729ED63AAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Swagger", "Swagger", "{C0A2BB33-ECC9-4A0A-81C3-EF96FA6D4128}"
+	ProjectSection(SolutionItems) = preProject
+		Swagger\Swagger.md = Swagger\Swagger.md
+		Swagger\swagger_V1.json = Swagger\swagger_V1.json
+		Swagger\swagger_V2.json = Swagger\swagger_V2.json
+		Swagger\swagger_V3.json = Swagger\swagger_V3.json
+		Swagger\swagger_V4.json = Swagger\swagger_V4.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenApiDiscoverability.Client", "OpenApiDiscoverability.Client\OpenApiDiscoverability.Client.csproj", "{066D41BD-98AA-4DA8-A4A9-C7E708FA2C56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenApi", "OpenApi", "{28EF3DC3-BCB6-4FA4-B72C-C439E987C65C}"
+	ProjectSection(SolutionItems) = preProject
+		OpenApi\swagger.json = OpenApi\swagger.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +31,10 @@ Global
 		{429C0FB7-84E0-4BDB-A7AC-47729ED63AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{429C0FB7-84E0-4BDB-A7AC-47729ED63AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{429C0FB7-84E0-4BDB-A7AC-47729ED63AAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{066D41BD-98AA-4DA8-A4A9-C7E708FA2C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{066D41BD-98AA-4DA8-A4A9-C7E708FA2C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{066D41BD-98AA-4DA8-A4A9-C7E708FA2C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{066D41BD-98AA-4DA8-A4A9-C7E708FA2C56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
