@@ -40,3 +40,11 @@ Added the following code to the Shop Controller :
 `[ApiConventionType(typeof(DefaultApiConventions))]`
 
 The openapi specification now includes standard response code by default (400,404, etc)
+
+## Swagger_V4
+
+Added the OperationId to each Method: 
+
+`[HttpGet(Name = nameof(GetShops))]`
+
+OperationId is defined as an optional unique string used to identify an operation
