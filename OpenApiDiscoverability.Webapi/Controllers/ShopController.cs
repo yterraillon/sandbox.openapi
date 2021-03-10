@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Net.Mime;
 
 namespace OpenApiDiscoverability.Webapi.Controllers
 {
@@ -9,8 +10,11 @@ namespace OpenApiDiscoverability.Webapi.Controllers
     [ApiController]
     [ApiConventionType(typeof(DefaultApiConventions))]
     [Route("api/shops")]
-    [Produces("application/json")]
-    [Consumes("application/json")]
+    // this is the same as
+    // [Produces("application/json")]
+    // [Consumes("application/json")]
+    [Produces(MediaTypeNames.Application.Json)]
+    [Consumes(MediaTypeNames.Application.Json)]
     public class ShopController : ControllerBase
     {
         // operationId is defined as an optional unique string used to identify an operation
