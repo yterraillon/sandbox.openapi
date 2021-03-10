@@ -16,6 +16,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Swagger", "Swagger", "{C0A2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenApiDiscoverability.Client", "OpenApiDiscoverability.Client\OpenApiDiscoverability.Client.csproj", "{066D41BD-98AA-4DA8-A4A9-C7E708FA2C56}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OpenApi", "OpenApi", "{28EF3DC3-BCB6-4FA4-B72C-C439E987C65C}"
+	ProjectSection(SolutionItems) = preProject
+		OpenApi\swagger.json = OpenApi\swagger.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
