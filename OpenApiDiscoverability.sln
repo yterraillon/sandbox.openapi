@@ -10,7 +10,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Swagger", "Swagger", "{C0A2
 		Swagger\Swagger.md = Swagger\Swagger.md
 		Swagger\swagger_V1.json = Swagger\swagger_V1.json
 		Swagger\swagger_V2.json = Swagger\swagger_V2.json
+		Swagger\swagger_V3.json = Swagger\swagger_V3.json
+		Swagger\swagger_V4.json = Swagger\swagger_V4.json
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenApiDiscoverability.Client", "OpenApiDiscoverability.Client\OpenApiDiscoverability.Client.csproj", "{066D41BD-98AA-4DA8-A4A9-C7E708FA2C56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,6 +26,10 @@ Global
 		{429C0FB7-84E0-4BDB-A7AC-47729ED63AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{429C0FB7-84E0-4BDB-A7AC-47729ED63AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{429C0FB7-84E0-4BDB-A7AC-47729ED63AAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{066D41BD-98AA-4DA8-A4A9-C7E708FA2C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{066D41BD-98AA-4DA8-A4A9-C7E708FA2C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{066D41BD-98AA-4DA8-A4A9-C7E708FA2C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{066D41BD-98AA-4DA8-A4A9-C7E708FA2C56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
