@@ -5,8 +5,9 @@ using System.Collections.Generic;
 
 namespace OpenApiDiscoverability.Webapi.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [ApiConventionType(typeof(DefaultApiConventions))]
+    [Route("api/[controller]")]
     [Produces("application/json")]
     [Consumes("application/json")]
     public class ShopController : ControllerBase

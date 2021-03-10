@@ -32,3 +32,11 @@ The file is now shorter, and the following sections are gone
                     "type": "string"
                   }
                 }`
+
+## Swagger_V3
+
+Added the following code to the Shop Controller : 
+
+`[ApiConventionType(typeof(DefaultApiConventions))]`
+
+The openapi specification now includes standard response code by default (400,404, etc)
